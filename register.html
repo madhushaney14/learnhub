@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for a free LearnHub account and start learning today.">
+  <title>Register – LearnHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="LearnHub – Home">
+      <img src="logo.png" alt="LearnHub logo" class="logo-img" width="38" height="38">
+      <span class="logo-name">Learn<span>Hub</span></span>
+    </a>
+    <button class="hamburger" id="hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html"    class="nav-link">Home</a></li>
+        <li><a href="courses.html"  class="nav-link">Courses</a></li>
+        <li><a href="contact.html"  class="nav-link">Contact</a></li>
+        <li><a href="register.html" class="nav-btn" aria-current="page">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Resgistration - Banner -->
+<div class="page-banner">
+  <div class="container">
+    <h1>Create Your Free Account</h1>
+    <p>Join thousands of learners across Sri Lanka and start your journey today!</p>
+  </div>
+</div>
+
+<main>
+  <section class="form-section" aria-labelledby="register-heading">
+    <div class="container">
+      <div class="form-card">
+
+        <h2 id="register-heading">Student Registration</h2>
+        <p class="subtitle">
+          Fields marked <span style="color:var(--clr-error);" aria-hidden="true">*</span>
+          <span class="sr-only">(required)</span> are mandatory
+        </p>
+
+        <!-- Success Message -->
+        <div id="success-banner"
+             class="success-banner"
+             role="alert"
+             aria-live="assertive">
+          <h3>&#10003; Registration Successful!</h3>
+          <p>Thank you for joining LearnHub. We'll send your account details to your email shortly. Happy learning!</p>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="registration-form"
+              novalidate
+              aria-label="Student registration form">
+
+          <!-- Input 1: Fullname -->
+          <div class="form-group">
+            <label for="fullName">
+              Full Name <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input type="text"
+                   id="fullName"
+                   name="fullName"
+                   class="form-control"
+                   placeholder="e.g. Marie Curie"
+                   autocomplete="name"
+                   aria-describedby="err-fullName"
+                   aria-required="true">
+            <span id="err-fullName"
+                  class="err-msg"
+                  role="alert"
+                  aria-live="polite"></span>
+          </div>
+
+          <!-- Input 2: email -->
+          <div class="form-group">
+            <label for="email">
+              Email Address <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   class="form-control"
+                   placeholder="e.g. curie@example.com"
+                   autocomplete="email"
+                   aria-describedby="err-email"
+                   aria-required="true">
+            <span id="err-email"
+                  class="err-msg"
+                  role="alert"
+                  aria-live="polite"></span>
+          </div>
+
+          <!-- Input 3: password -->
+          <div class="form-group">
+            <label for="password">
+              Password <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   class="form-control"
+                   placeholder="Create a strong password"
+                   autocomplete="new-password"
+                   aria-describedby="pw-criteria err-password"
+                   aria-required="true">
+
+            <!-- Live password check -->
+            <div class="pw-criteria" id="pw-criteria" role="group" aria-label="Password requirements">
+              <div class="criterion" id="cr-length">
+                <span class="cr-icon" aria-hidden="true"></span>
+                At least 8 characters
+              </div>
+              <div class="criterion" id="cr-upper">
+                <span class="cr-icon" aria-hidden="true"></span>
+                At least one uppercase letter (A–Z)
+              </div>
+              <div class="criterion" id="cr-lower">
+                <span class="cr-icon" aria-hidden="true"></span>
+                At least one lowercase letter (a–z)
+              </div>
+              <div class="criterion" id="cr-number">
+                <span class="cr-icon" aria-hidden="true"></span>
+                At least one number (0–9)
+              </div>
+            </div>
+
+            <span id="err-password"
+                  class="err-msg"
+                  role="alert"
+                  aria-live="polite"></span>
+          </div>
+
+          <!-- Input 4: DOB -->
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date"
+                   id="dob"
+                   name="dob"
+                   class="form-control"
+                   aria-label="Your date of birth">
+          </div>
+
+          <!-- Input 5: Preferred Course  (opt) -->
+          <div class="form-group">
+            <label for="preferredCourse">Preferred Subject Area</label>
+            <select id="preferredCourse"
+                    name="preferredCourse"
+                    class="form-control"
+                    aria-label="Select your preferred subject area">
+              <option value="">&#8212; Choose a subject &#8212;</option>
+              <option value="web-dev">Web Development</option>
+              <option value="data-science">Data Science &amp; Analytics</option>
+              <option value="ux-design">UI/UX Design</option>
+              <option value="cyber-security">Cyber Security</option>
+              <option value="ai-ml">AI &amp; Machine Learning</option>
+              <option value="digital-marketing">Digital Marketing</option>
+            </select>
+          </div>
+
+          <!-- Inout 6: Experience Level (opt) -->
+          <div class="form-group">
+            <span class="group-label" id="level-label">Experience Level</span>
+            <div class="radio-group"
+                 role="radiogroup"
+                 aria-labelledby="level-label">
+
+              <label class="radio-opt">
+                <input type="radio" name="level" value="beginner">
+                Beginner — No prior experience
+              </label>
+              <label class="radio-opt">
+                <input type="radio" name="level" value="intermediate">
+                Intermediate — Some background knowledge
+              </label>
+              <label class="radio-opt">
+                <input type="radio" name="level" value="advanced">
+                Advanced — Looking to deepen expertise
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Input 7: Learning Interests (opt) -->
+          <div class="form-group">
+            <span class="group-label" id="interests-label">Learning Goals</span>
+            <p style="font-size:0.82rem;color:var(--clr-text-muted);margin-bottom:10px;">Select all that apply.</p>
+            <div class="checkbox-group"
+                 role="group"
+                 aria-labelledby="interests-label">
+
+              <label class="check-opt">
+                <input type="checkbox" name="interests" value="career">
+                Career development and job readiness
+              </label>
+              <label class="check-opt">
+                <input type="checkbox" name="interests" value="skills">
+                Gaining new technical skills
+              </label>
+              <label class="check-opt">
+                <input type="checkbox" name="interests" value="personal">
+                Personal interest and curiosity
+              </label>
+              <label class="check-opt">
+                <input type="checkbox" name="interests" value="cert">
+                Professional certification preparation
+              </label>
+
+            </div>
+          </div>
+
+          <!-- Input 8: – Personal Statement (opt) -->
+          <div class="form-group">
+            <label for="statement">Personal Statement</label>
+            <textarea id="statement"
+                      name="statement"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Tell us about yourself and what you hope to achieve…"
+                      aria-label="Your personal statement"></textarea>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit"
+                  class="btn-submit"
+                  aria-label="Submit registration form">
+            Create My Free Account &#8594;
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-name" aria-label="LearnHub home">
+          Learn<span>Hub</span>
+        </a>
+        <p>Sri Lanka's trusted online learning platform. Empowering learners with job-ready skills in Technology, Data Science, Design, and more since 2022.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="courses.html?subject=web-dev">Web Development</a></li>
+          <li><a href="courses.html?subject=data-science">Data Science</a></li>
+          <li><a href="courses.html?subject=ux-design">UI/UX Design</a></li>
+          <li><a href="courses.html?subject=cyber-security">Cyber Security</a></li>
+          <li><a href="courses.html?subject=ai-ml">AI &amp; Machine Learning</a></li>
+          <li><a href="courses.html?subject=digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="contact.html">About Us</a></li>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@learnhub.lk">hello@learnhub.lk</a></li>
+          <li>+94 11 234 5678</li>
+          <li>World Trade Centre, Colombo 01</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy;  2026 LearnHub (Pvt) Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all LearnHub courses across Web Development, Data Science, UI/UX, Cyber Security, AI, and Digital Marketing.">
+  <title>Courses – LearnHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="LearnHub – Home">
+      <img src="logo.png"
+           alt="LearnHub logo"
+           class="logo-img"
+           width="38" height="38">
+      <span class="logo-name">Learn<span>Hub</span></span>
+    </a>
+    <button class="hamburger" id="hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html"    class="nav-link">Home</a></li>
+        <li><a href="courses.html"  class="nav-link" aria-current="page">Courses</a></li>
+        <li><a href="contact.html"  class="nav-link">Contact</a></li>
+        <li><a href="register.html" class="nav-btn">Sign Up</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Courses Page - Banner -->
+<div class="page-banner" aria-labelledby="courses-h1">
+  <div class="container">
+    <h1 id="courses-h1">Browse All Courses</h1>
+    <p>48+ expert-led courses across 6 subject areas — all priced for the Sri Lankan market</p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <div class="courses-page-layout">
+
+      <!-- Left sidebar -->
+      <aside class="courses-sidebar"
+             aria-label="Course filter sidebar"
+             id="courses-sidebar">
+
+        <div class="sidebar-head">
+          <!-- Search bar -->
+          <div class="search-box" role="search">
+            <span class="search-icon" aria-hidden="true">&#128269;</span>
+            <input type="text"
+                   id="course-search"
+                   placeholder="Search courses…"
+                   aria-label="Search courses by title or description"
+                   autocomplete="off">
+          </div>
+        </div>
+
+        <nav class="sidebar-nav"
+             id="sidebar-nav"
+             aria-label="Subject filter navigation">
+          <p style="padding:16px 20px;font-size:0.87rem;color:var(--clr-text-muted);">
+            Loading subjects&hellip;
+          </p>
+        </nav>
+
+      </aside>
+
+      <!-- Courses Main Area -->
+      <div class="courses-main-area">
+        <h2 class="sr-only">Course Browser</h2>
+        <!-- Toolbar- count + sort -->
+        <div class="courses-toolbar">
+          <p class="courses-count" id="courses-count" aria-live="polite">
+            Loading courses&hellip;
+          </p>
+          <div class="sort-wrapper">
+            <label for="sort-select" class="sort-label">Sort by:</label>
+            <!--Sort dropdown -->
+            <select id="sort-select"
+                    class="sort-select"
+                    aria-label="Sort courses">
+              <option value="popular">Most Popular</option>
+              <option value="rating">Highest Rated</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- courses-grid -->
+        <div class="courses-grid"
+             id="courses-grid"
+             role="region"
+             aria-live="polite"
+             aria-label="Courses list">
+          <p class="loading-msg">Loading courses&hellip;</p>
+        </div>
+
+        <!-- Lesson detail panel -->
+        <div id="lesson-panel"
+             class="lesson-panel"
+             role="region"
+             aria-live="polite"
+             aria-label="Course detail and lesson list"
+             style="display:none;">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-name" aria-label="LearnHub home">
+          Learn<span>Hub</span>
+        </a>
+        <p>Sri Lanka's trusted online learning platform. Empowering learners with job-ready skills in Technology, Data Science, Design, and more since 2022.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="courses.html?subject=web-dev">Web Development</a></li>
+          <li><a href="courses.html?subject=data-science">Data Science</a></li>
+          <li><a href="courses.html?subject=ux-design">UI/UX Design</a></li>
+          <li><a href="courses.html?subject=cyber-security">Cyber Security</a></li>
+          <li><a href="courses.html?subject=ai-ml">AI &amp; Machine Learning</a></li>
+          <li><a href="courses.html?subject=digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="contact.html">About Us</a></li>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@learnhub.lk">hello@learnhub.lk</a></li>
+          <li>+94 11 234 5678</li>
+          <li>World Trade Centre, Colombo 01</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LearnHub (Pvt) Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

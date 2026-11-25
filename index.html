@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LearnHub – Sri Lanka's premium online learning platform for Technology, Design, Data Science and more.">
+  <title>LearnHub – Learn Without Limits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="LearnHub – Home">
+      <img src="logo.png"
+           alt="LearnHub logo"
+           class="logo-img"
+           width="38" height="38">
+      <span class="logo-name">Learn<span>Hub</span></span>
+    </a>
+
+<!--mobile hamburger -->
+    <button class="hamburger" id="hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html"   class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="register.html" class="nav-btn">Sign Up</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+    <h1 class="sr-only">LearnHub – Online Learning Platform</h1>
+  <!--Hero Slider-->
+  <section class="hero-slider" aria-label="Promotional banners">
+
+    <div class="slides-track" id="slides-track" role="list">
+
+      <!-- Slide 1: AI & Data Science career -->
+      <div class="slide slide-bg-1" role="listitem" aria-label="Slide 1 of 4">
+        <div class="slide-dots-bg" aria-hidden="true"></div>
+        <div class="slide-content">
+          <h2>Advance Your Career in<br>AI &amp; Data Science</h2>
+          <p>Join 5,000+ students already leading the technology of the future. Expert-led courses. Real-world projects. Industry-recognised certificates.</p>
+          <a href="courses.html?subject=ai-ml" class="slide-cta cta-white">
+            Explore AI Courses &#8594;
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 2: Limited offer -->
+      <div class="slide slide-bg-2" role="listitem" aria-label="Slide 2 of 4">
+        <div class="slide-dots-bg" aria-hidden="true"></div>
+        <div class="slide-content">
+          <h2>40% Off All Courses<br>This Month Only</h2>
+          <p>Kickstart your learning journey at an unbeatable price. Over 48 premium courses across 6 subject areas — all discounted until 30th April.</p>
+          <a href="courses.html" class="slide-cta cta-amber">
+            Browse All Courses
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 3: Combo plans -->
+      <div class="slide slide-bg-3" role="listitem" aria-label="Slide 3 of 4">
+        <div class="slide-dots-bg" aria-hidden="true"></div>
+        <div class="slide-content">
+          <h2>Web Dev + Data Science<br>Bundle — Save 35%</h2>
+          <p>Our most powerful combo plan bundles our top two career tracks at a special price. Master the full-stack of modern digital skills in one go.</p>
+          <a href="register.html" class="slide-cta cta-sky">
+            Get the Bundle
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 4: Community -->
+      <div class="slide slide-bg-4" role="listitem" aria-label="Slide 4 of 4">
+        <div class="slide-dots-bg" aria-hidden="true"></div>
+        <div class="slide-content">
+          <h2>Learn Together,<br>Grow Together</h2>
+          <p>Access peer forums, live Q&amp;A sessions with instructors, and a global community of learners.</p>
+          <a href="courses.html" class="slide-cta cta-emerald">
+            Join the Community!
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Arrow navigation -->
+    <button class="slider-arrow prev" id="slider-prev" aria-label="Previous slide">&#8249;</button>
+    <button class="slider-arrow next" id="slider-next" aria-label="Next slide">&#8250;</button>
+
+    <!-- Dot indicators -->
+    <div class="slider-dots" id="slider-dots" role="tablist" aria-label="Slide indicators"></div>
+
+  </section>
+
+  <!-- Featured Courses -->
+  <section class="section-pad" aria-labelledby="featured-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <div>
+          <h2 class="section-title" id="featured-heading">Available Courses</h2>
+          <p class="section-subtitle">Hand-picked courses across our most popular subject areas</p>
+        </div>
+        <a href="courses.html" class="view-all-link" aria-label="Explore all courses">
+          Explore All Courses &#8594;
+        </a>
+      </div>
+
+      <div class="courses-grid"
+           id="featured-courses-grid"
+           role="region"
+           aria-live="polite"
+           aria-label="Featured courses">
+        <p class="loading-msg">Loading courses&hellip;</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose LearnHub? -->
+  <section style="background:var(--clr-bg-alt);padding:56px 0;"
+           aria-labelledby="why-heading">
+    <div class="container">
+      <h2 class="section-title" id="why-heading" style="text-align:center;margin-bottom:40px;">
+        Why Choose LearnHub?
+      </h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;">
+
+        <div style="text-align:center;padding:24px;">
+          <div style="font-size:2.2rem;margin-bottom:12px;">&#127891;</div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">Expert Instructors</h3>
+          <p style="font-size:0.87rem;color:var(--clr-text-muted);line-height:1.6;">Learn from industry professionals with real-world experience in their fields.</p>
+        </div>
+
+        <div style="text-align:center;padding:24px;">
+          <div style="font-size:2.2rem;margin-bottom:12px;">&#128203;</div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">48+ Courses</h3>
+          <p style="font-size:0.87rem;color:var(--clr-text-muted);line-height:1.6;">Spanning 6 subject areas from Web Development to Digital Marketing — all in one place.</p>
+        </div>
+
+        <div style="text-align:center;padding:24px;">
+          <div style="font-size:2.2rem;margin-bottom:12px;">&#128197;</div>
+          <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">Learn at Your Pace</h3>
+          <p style="font-size:0.87rem;color:var(--clr-text-muted);line-height:1.6;">All courses are self-paced with lifetime access. Study when it suits your schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="section-pad" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+
+        <!-- About Us - Text -->
+        <div>
+          <h2 class="section-title" id="about-heading" style="margin-bottom:16px;">About LearnHub</h2>
+          <p style="font-size:1rem;color:var(--clr-text-md);line-height:1.8;margin-bottom:16px;">
+            LearnHub is Sri Lanka's premier online learning platform, founded in 2022 with a mission to make
+            world-class education accessible and affordable for every Sri Lankan. From our headquarters in
+            Colombo, we partner with industry experts to deliver practical, career-focused courses.
+          </p>
+          <p style="font-size:1rem;color:var(--clr-text-md);line-height:1.8;margin-bottom:28px;">
+            With over 5,000 learners enrolled and 48 courses across 6 subject areas, LearnHub is committed to
+            empowering the next generation of Sri Lankan technology professionals — all priced in LKR and
+            designed to fit around your schedule.
+          </p>
+          <a href="contact.html" class="slide-cta cta-white" style="background:var(--clr-primary);color:#fff;display:inline-flex;">
+            Learn More &#8594;
+          </a>
+        </div>
+
+        <!-- About Us - Statistics -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div style="background:var(--clr-primary-lt);border-radius:var(--radius-lg);padding:28px 24px;text-align:center;">
+            <div style="font-size:2.2rem;font-weight:800;color:#1e1b4b;line-height:1;">5,000+</div>
+            <div style="font-size:0.9rem;color:var(--clr-text-muted);margin-top:6px;font-weight:600;">Active Learners</div>
+          </div>
+          <div style="background:#FEF3C7;border-radius:var(--radius-lg);padding:28px 24px;text-align:center;">
+            <div style="font-size:2.2rem;font-weight:800;color:#78350F;line-height:1;">48+</div>
+            <div style="font-size:0.9rem;color:var(--clr-text-muted);margin-top:6px;font-weight:600;">Courses Available</div>
+          </div>
+          <div style="background:#ECFDF5;border-radius:var(--radius-lg);padding:28px 24px;text-align:center;">
+            <div style="font-size:2.2rem;font-weight:800;color:#064e3b;line-height:1;">6</div>
+            <div style="font-size:0.9rem;color:var(--clr-text-muted);margin-top:6px;font-weight:600;">Subject Areas</div>
+          </div>
+          <div style="background:#FDF2F8;border-radius:var(--radius-lg);padding:28px 24px;text-align:center;">
+            <div style="font-size:2.2rem;font-weight:800;color:#701a75;line-height:1;">4.7</div>
+            <div style="font-size:0.9rem;color:var(--clr-text-muted);margin-top:6px;font-weight:600;">Avg. Rating</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Courses Carousel -->
+  <section class="section-pad trending-section" aria-labelledby="trending-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <div>
+          <h2 class="section-title" id="trending-heading">Trending Courses</h2>
+          <p class="section-subtitle">Our highest-rated courses right now. Enrol before spots fill up.</p>
+        </div>
+      </div>
+
+      <div class="carousel-wrapper">
+        <!-- Left arrow -->
+        <button class="carousel-btn cp-prev" id="cp-prev" aria-label="Scroll trending courses left">&#8249;</button>
+
+        <div class="carousel-track-outer">
+          <div class="carousel-track"
+               id="trending-track"
+               aria-label="Trending courses carousel"
+               role="list">
+            <p class="loading-msg">Loading trending courses&hellip;</p>
+          </div>
+        </div>
+
+        <!-- Right arrow -->
+        <button class="carousel-btn cp-next" id="cp-next" aria-label="Scroll trending courses right">&#8250;</button>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="index.html" class="logo-name" aria-label="LearnHub home">
+          Learn<span>Hub</span>
+        </a>
+        <p>Sri Lanka's trusted online learning platform. Empowering learners with job-ready skills in Technology, Data Science, Design, and more since 2022.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="courses.html?subject=web-dev">Web Development</a></li>
+          <li><a href="courses.html?subject=data-science">Data Science</a></li>
+          <li><a href="courses.html?subject=ux-design">UI/UX Design</a></li>
+          <li><a href="courses.html?subject=cyber-security">Cyber Security</a></li>
+          <li><a href="courses.html?subject=ai-ml">AI &amp; Machine Learning</a></li>
+          <li><a href="courses.html?subject=digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="contact.html">About Us</a></li>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@learnhub.lk">hello@learnhub.lk</a></li>
+          <li>+94 11 234 5678</li>
+          <li>World Trade Centre, Colombo 01</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 LearnHub (Pvt) Ltd. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

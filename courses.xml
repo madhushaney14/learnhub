@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog>
+
+  <subjects>
+    <subject id="web-dev"           color="#3B82F6">Web Development</subject>
+    <subject id="data-science"      color="#8B5CF6">Data Science &amp; Analytics</subject>
+    <subject id="ux-design"         color="#EC4899">UI/UX Design</subject>
+    <subject id="cyber-security"    color="#EF4444">Cyber Security</subject>
+    <subject id="ai-ml"             color="#10B981">AI &amp; Machine Learning</subject>
+    <subject id="digital-marketing" color="#F97316">Digital Marketing</subject>
+  </subjects>
+
+  <courses>
+
+    <!-- Web Development -->
+
+    <course id="html-css-basics" subject="web-dev" price="4500" rating="4.6" students="1820" date="2024-06-15" level="Beginner" duration="12 hours">
+      <title>HTML &amp; CSS for Beginners</title>
+      <description>Master the building blocks of the web. Learn to structure content with HTML5 and style it beautifully with CSS3, building real projects from day one.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>Introduction to the Web and HTML5</title>
+          <subtopics>
+            <subtopic>How the internet and web browsers work (client-server model)</subtopic>
+            <subtopic>Anatomy of an HTML5 document: DOCTYPE, head, body</subtopic>
+            <subtopic>Semantic elements: header, nav, main, section, article, footer</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Explain how websites are served and rendered by browsers</outcome>
+            <outcome>Write a correctly structured, semantic HTML5 document from scratch</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>CSS Fundamentals and the Box Model</title>
+          <subtopics>
+            <subtopic>Selectors, specificity, and the cascade</subtopic>
+            <subtopic>The CSS Box Model: margin, border, padding, content</subtopic>
+            <subtopic>Units: px, em, rem, %, vw/vh</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Apply CSS rules using a variety of selector types</outcome>
+            <outcome>Control element sizing and spacing using the box model</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="65 min">
+          <title>Page Layout with Flexbox</title>
+          <subtopics>
+            <subtopic>Flex container and flex item properties</subtopic>
+            <subtopic>Alignment: justify-content, align-items, align-self</subtopic>
+            <subtopic>Building a navigation bar and card layout</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Build flexible one-dimensional layouts with Flexbox</outcome>
+            <outcome>Centre elements both horizontally and vertically</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="4" lessonDuration="55 min">
+          <title>Responsive Web Design and Media Queries</title>
+          <subtopics>
+            <subtopic>Mobile-first design philosophy</subtopic>
+            <subtopic>CSS media queries and common breakpoints</subtopic>
+            <subtopic>Fluid images and the viewport meta tag</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Create layouts that adapt to mobile, tablet, and desktop screens</outcome>
+            <outcome>Implement a responsive navigation bar and image gallery</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="5" lessonDuration="70 min">
+          <title>Final Project: Build a Personal Portfolio Page</title>
+          <subtopics>
+            <subtopic>Planning and wireframing the portfolio layout</subtopic>
+            <subtopic>Implementing hero, about, projects, and contact sections</subtopic>
+            <subtopic>Adding hover effects, transitions, and CSS animations</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Build a fully responsive portfolio website</outcome>
+            <outcome>Apply all HTML5 and CSS3 concepts from the course</outcome>
+          </outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="javascript-es6" subject="web-dev" price="6500" rating="4.7" students="2340" date="2024-08-20" level="Beginner" duration="15 hours">
+      <title>JavaScript ES6 Fundamentals</title>
+      <description>Go from zero to confident JavaScript developer. Learn variables, functions, DOM manipulation, events, and modern ES6+ syntax through practical exercises.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Variables, Data Types and Operators</title>
+          <subtopics>
+            <subtopic>let, const, and var — when to use each</subtopic>
+            <subtopic>Primitive types: string, number, boolean, null, undefined</subtopic>
+            <subtopic>Template literals and string interpolation</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Declare and use variables correctly using modern JavaScript syntax</outcome>
+            <outcome>Perform type coercion and understand strict equality</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Functions and Arrow Functions</title>
+          <subtopics>
+            <subtopic>Function declarations vs expressions</subtopic>
+            <subtopic>Arrow function syntax and implicit returns</subtopic>
+            <subtopic>Default parameters and the rest/spread operators</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Write reusable functions in both traditional and ES6 arrow styles</outcome>
+            <outcome>Use destructuring and spread syntax to write concise code</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="65 min">
+          <title>DOM Manipulation and Events</title>
+          <subtopics>
+            <subtopic>Selecting elements: querySelector, getElementById</subtopic>
+            <subtopic>Modifying content, attributes, and styles dynamically</subtopic>
+            <subtopic>Event listeners and the event object</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Dynamically update page content using the DOM API</outcome>
+            <outcome>Handle user interactions with event listeners</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="4" lessonDuration="50 min">
+          <title>Arrays, Objects and Iteration</title>
+          <subtopics>
+            <subtopic>Array methods: map, filter, reduce, forEach</subtopic>
+            <subtopic>Object literals, property shorthand, and computed keys</subtopic>
+            <subtopic>for...of and for...in loops</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Process and transform data using modern array methods</outcome>
+            <outcome>Create and destructure objects and arrays efficiently</outcome>
+          </outcomes>
+        </lesson>
+        <lesson order="5" lessonDuration="75 min">
+          <title>Async JavaScript: Fetch and Promises</title>
+          <subtopics>
+            <subtopic>Synchronous vs asynchronous execution</subtopic>
+            <subtopic>Fetch API and working with JSON data</subtopic>
+            <subtopic>async/await syntax and error handling with try/catch</subtopic>
+          </subtopics>
+          <outcomes>
+            <outcome>Make HTTP requests and handle API responses</outcome>
+            <outcome>Write clean asynchronous code using async/await</outcome>
+          </outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="react-frontend" subject="web-dev" price="12500" rating="4.8" students="1560" date="2024-10-01" level="Intermediate" duration="22 hours">
+      <title>React.js for Front-End Development</title>
+      <description>Build dynamic, component-based web applications with React. Learn hooks, state management, and routing patterns used by top companies worldwide.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>React Basics: Components and JSX</title>
+          <subtopics><subtopic>Setting up a React app with Vite</subtopic><subtopic>JSX syntax and expressions</subtopic><subtopic>Functional components and props</subtopic></subtopics>
+          <outcomes><outcome>Create and compose functional React components</outcome><outcome>Pass and receive data via props</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>State and the useState Hook</title>
+          <subtopics><subtopic>Understanding component state vs props</subtopic><subtopic>useState hook and state updates</subtopic><subtopic>Controlled inputs and form handling</subtopic></subtopics>
+          <outcomes><outcome>Manage local component state with useState</outcome><outcome>Build interactive form components</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="70 min">
+          <title>useEffect and Data Fetching</title>
+          <subtopics><subtopic>Side effects and the useEffect hook</subtopic><subtopic>Fetching API data in React</subtopic><subtopic>Loading states and error handling</subtopic></subtopics>
+          <outcomes><outcome>Fetch and display data from external APIs</outcome><outcome>Control when effects run using the dependency array</outcome></outcomes>
+        </lesson>
+        <lesson order="4" lessonDuration="55 min">
+          <title>React Router for Navigation</title>
+          <subtopics><subtopic>Client-side routing concepts</subtopic><subtopic>Setting up routes with React Router v6</subtopic><subtopic>Nested routes and URL parameters</subtopic></subtopics>
+          <outcomes><outcome>Build multi-page React apps with client-side routing</outcome><outcome>Navigate programmatically and use route params</outcome></outcomes>
+        </lesson>
+        <lesson order="5" lessonDuration="80 min">
+          <title>Final Project: Full React Application</title>
+          <subtopics><subtopic>Component architecture planning</subtopic><subtopic>Integrating a public API</subtopic><subtopic>Deploying to Netlify or Vercel</subtopic></subtopics>
+          <outcomes><outcome>Build and deploy a production-ready React application</outcome><outcome>Apply all hooks and routing concepts from the course</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="nodejs-backend" subject="web-dev" price="14000" rating="4.5" students="890" date="2024-11-15" level="Intermediate" duration="18 hours">
+      <title>Node.js &amp; Express Backend Development</title>
+      <description>Build scalable REST APIs with Node.js and Express. Learn routing, middleware, authentication, and MongoDB integration.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Node.js Core Concepts</title>
+          <subtopics><subtopic>The Node.js runtime and event loop</subtopic><subtopic>CommonJS modules and the npm ecosystem</subtopic><subtopic>File system and path core modules</subtopic></subtopics>
+          <outcomes><outcome>Run JavaScript on the server using Node.js</outcome><outcome>Use core modules to work with files and directories</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Express.js and REST API Design</title>
+          <subtopics><subtopic>Creating an Express server and defining routes</subtopic><subtopic>REST API conventions and HTTP methods</subtopic><subtopic>Middleware: body-parser, cors, morgan</subtopic></subtopics>
+          <outcomes><outcome>Build a RESTful API with Express.js</outcome><outcome>Handle GET, POST, PUT, DELETE routes correctly</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="65 min">
+          <title>Authentication with JWT</title>
+          <subtopics><subtopic>Password hashing with bcrypt</subtopic><subtopic>JSON Web Tokens: creation and verification</subtopic><subtopic>Protected routes and authorization middleware</subtopic></subtopics>
+          <outcomes><outcome>Implement secure user registration and login</outcome><outcome>Protect API endpoints using JWT middleware</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="fullstack-dev" subject="web-dev" price="28500" rating="4.9" students="640" date="2025-01-10" level="Advanced" duration="40 hours">
+      <title>Full-Stack Web Development Bootcamp</title>
+      <description>A comprehensive programme covering React, Node.js, databases, authentication, and deployment. Build three real-world portfolio projects.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="90 min">
+          <title>Project Architecture and Planning</title>
+          <subtopics><subtopic>Monolithic vs microservice architectures</subtopic><subtopic>Database schema design and entity relationships</subtopic><subtopic>Setting up a full-stack project structure</subtopic></subtopics>
+          <outcomes><outcome>Design and document full-stack application architecture</outcome><outcome>Set up a professional monorepo development environment</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="80 min">
+          <title>Building the REST API</title>
+          <subtopics><subtopic>Advanced Express routing and error handling</subtopic><subtopic>Mongoose schemas and population</subtopic><subtopic>API documentation with Swagger</subtopic></subtopics>
+          <outcomes><outcome>Build a production-grade REST API with full CRUD</outcome><outcome>Document API endpoints for team collaboration</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="85 min">
+          <title>React Front-End Integration</title>
+          <subtopics><subtopic>Connecting React to the API using Axios</subtopic><subtopic>Global state management with Zustand</subtopic><subtopic>Protected routes and authentication flow</subtopic></subtopics>
+          <outcomes><outcome>Integrate a React front-end with a Node.js back-end</outcome><outcome>Implement a secure login/logout flow end-to-end</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="wordpress" subject="web-dev" price="5500" rating="4.3" students="2100" date="2024-05-01" level="Beginner" duration="10 hours">
+      <title>WordPress Website Building</title>
+      <description>Build professional websites without code. Learn themes, plugins, Elementor, and WooCommerce to deliver real client websites.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="45 min">
+          <title>WordPress Installation and Dashboard</title>
+          <subtopics><subtopic>Hosting and domain registration</subtopic><subtopic>Installing WordPress via cPanel</subtopic><subtopic>Overview of the WordPress dashboard</subtopic></subtopics>
+          <outcomes><outcome>Set up a live WordPress site on real hosting</outcome><outcome>Navigate the admin dashboard confidently</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="50 min">
+          <title>Themes, Elementor, and Plugins</title>
+          <subtopics><subtopic>Free vs premium themes</subtopic><subtopic>Drag-and-drop building with Elementor</subtopic><subtopic>Must-have plugins: Yoast, Wordfence, WPForms</subtopic></subtopics>
+          <outcomes><outcome>Build a visually polished website using Elementor</outcome><outcome>Configure essential plugins for SEO and security</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="responsive-design" subject="web-dev" price="7500" rating="4.6" students="1430" date="2024-09-05" level="Beginner" duration="14 hours">
+      <title>Responsive Web Design Masterclass</title>
+      <description>Advanced CSS techniques: Grid, custom properties, animations, and scroll-driven effects. Build stunning sites that work on every device.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>CSS Grid Layout</title>
+          <subtopics><subtopic>Grid container and grid item properties</subtopic><subtopic>grid-template-areas and named lines</subtopic><subtopic>Auto-placement and the minmax() function</subtopic></subtopics>
+          <outcomes><outcome>Build complex two-dimensional layouts with CSS Grid</outcome><outcome>Combine Grid and Flexbox for real-world page layouts</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>CSS Animations and Micro-interactions</title>
+          <subtopics><subtopic>CSS transitions and timing functions</subtopic><subtopic>@keyframes animations</subtopic><subtopic>Intersection Observer API for scroll animations</subtopic></subtopics>
+          <outcomes><outcome>Add polished animations and hover effects to interfaces</outcome><outcome>Trigger animations on scroll using Intersection Observer</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="php-mysql" subject="web-dev" price="9500" rating="4.4" students="780" date="2024-12-01" level="Intermediate" duration="20 hours">
+      <title>PHP &amp; MySQL Web Development</title>
+      <description>Build dynamic, database-driven websites. Learn server-side programming, form handling, session management, and PDO for secure database access.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>PHP Syntax and Control Flow</title>
+          <subtopics><subtopic>Variables, arrays, and data types in PHP</subtopic><subtopic>Functions and scope</subtopic><subtopic>Loops, conditionals, and string functions</subtopic></subtopics>
+          <outcomes><outcome>Write PHP scripts to process data and generate dynamic HTML</outcome><outcome>Use PHP functions and arrays effectively</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>MySQL and PDO Integration</title>
+          <subtopics><subtopic>Relational database design and normalisation</subtopic><subtopic>Connecting to MySQL securely with PDO</subtopic><subtopic>Prepared statements to prevent SQL injection</subtopic></subtopics>
+          <outcomes><outcome>Design a normalised database and perform CRUD operations</outcome><outcome>Prevent SQL injection using PDO prepared statements</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <!-- Data Science -->
+
+    <course id="python-data" subject="data-science" price="8500" rating="4.8" students="2890" date="2024-07-01" level="Beginner" duration="18 hours">
+      <title>Python for Data Analysis</title>
+      <description>Use Python's data ecosystem — NumPy, Pandas, and Matplotlib — to clean, analyse, and visualise real-world datasets.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Python Basics for Data Science</title>
+          <subtopics><subtopic>Lists, dictionaries, and comprehensions</subtopic><subtopic>Functions and lambdas</subtopic><subtopic>Setting up Jupyter Notebooks and virtual environments</subtopic></subtopics>
+          <outcomes><outcome>Write Python scripts to process and transform data</outcome><outcome>Use Jupyter for interactive data exploration</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Data Wrangling with Pandas</title>
+          <subtopics><subtopic>DataFrames and Series: creation and indexing</subtopic><subtopic>Handling missing values: dropna, fillna</subtopic><subtopic>Grouping, merging, and reshaping datasets</subtopic></subtopics>
+          <outcomes><outcome>Load, clean, and transform raw datasets with Pandas</outcome><outcome>Perform aggregation and grouping operations on real data</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="60 min">
+          <title>Data Visualisation with Matplotlib and Seaborn</title>
+          <subtopics><subtopic>Line, bar, scatter, and histogram charts</subtopic><subtopic>Seaborn for statistical visualisations</subtopic><subtopic>Customising plots: titles, labels, colour palettes</subtopic></subtopics>
+          <outcomes><outcome>Create publication-quality charts with Matplotlib and Seaborn</outcome><outcome>Choose the right chart type for different data stories</outcome></outcomes>
+        </lesson>
+        <lesson order="4" lessonDuration="75 min">
+          <title>Exploratory Data Analysis Project</title>
+          <subtopics><subtopic>Formulating analytical questions from data</subtopic><subtopic>Detecting outliers, distributions, and correlations</subtopic><subtopic>Writing a structured EDA report in Jupyter</subtopic></subtopics>
+          <outcomes><outcome>Conduct a full EDA on a real-world dataset</outcome><outcome>Present findings using charts and written commentary</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="sql-analytics" subject="data-science" price="6000" rating="4.6" students="1650" date="2024-04-15" level="Beginner" duration="12 hours">
+      <title>SQL for Data Analytics</title>
+      <description>Master SQL from basics to advanced analytics. Learn window functions, CTEs, and query optimisation to extract insights from large databases.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>SQL Foundations</title>
+          <subtopics><subtopic>SELECT, WHERE, ORDER BY, LIMIT</subtopic><subtopic>Database concepts: tables, schemas, relationships</subtopic><subtopic>Working with NULL values and data types</subtopic></subtopics>
+          <outcomes><outcome>Query a database to retrieve and filter records</outcome><outcome>Sort and paginate query results effectively</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Joins and Aggregations</title>
+          <subtopics><subtopic>INNER, LEFT, RIGHT, and FULL OUTER joins</subtopic><subtopic>GROUP BY, HAVING, and aggregate functions</subtopic><subtopic>Subqueries and derived tables</subtopic></subtopics>
+          <outcomes><outcome>Combine data from related tables using joins</outcome><outcome>Summarise and aggregate data with GROUP BY</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="65 min">
+          <title>Window Functions and CTEs</title>
+          <subtopics><subtopic>OVER clause with PARTITION BY and ORDER BY</subtopic><subtopic>ROW_NUMBER, RANK, LAG, LEAD functions</subtopic><subtopic>Common Table Expressions (WITH clause)</subtopic></subtopics>
+          <outcomes><outcome>Calculate running totals and rankings with window functions</outcome><outcome>Simplify complex queries using CTEs</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="excel-analytics" subject="data-science" price="4000" rating="4.4" students="3200" date="2024-03-01" level="Beginner" duration="8 hours">
+      <title>Excel for Business Analytics</title>
+      <description>Become an Excel power user. VLOOKUP, pivot tables, dynamic charts, and Power Query to analyse business data confidently.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="45 min">
+          <title>Excel Functions for Analysis</title>
+          <subtopics><subtopic>VLOOKUP, HLOOKUP, and XLOOKUP</subtopic><subtopic>IF, IFS, COUNTIF, SUMIF</subtopic><subtopic>Text functions: TRIM, LEFT, RIGHT, CONCATENATE</subtopic></subtopics>
+          <outcomes><outcome>Use lookup functions to combine data from multiple sheets</outcome><outcome>Apply conditional functions for business calculations</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="50 min">
+          <title>PivotTables and Business Dashboards</title>
+          <subtopics><subtopic>Creating and configuring PivotTables</subtopic><subtopic>Slicers, timelines, and grouping</subtopic><subtopic>Building dynamic dashboards with PivotCharts</subtopic></subtopics>
+          <outcomes><outcome>Build interactive pivot tables to summarise large datasets</outcome><outcome>Create a business dashboard with slicers and charts</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="powerbi" subject="data-science" price="9500" rating="4.7" students="1120" date="2024-10-20" level="Intermediate" duration="16 hours">
+      <title>Data Visualisation with Power BI</title>
+      <description>Transform raw data into actionable insights. Build interactive dashboards and reports from multiple data sources using Power BI.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Power BI and Power Query</title>
+          <subtopics><subtopic>Connecting to Excel, CSV, SQL, and web sources</subtopic><subtopic>Data transformation with Power Query</subtopic><subtopic>Data model relationships</subtopic></subtopics>
+          <outcomes><outcome>Load and clean data from multiple sources using Power Query</outcome><outcome>Build a star schema data model in Power BI</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>DAX Formulas and Dashboard Design</title>
+          <subtopics><subtopic>CALCULATE, FILTER, and time intelligence functions</subtopic><subtopic>Choosing visuals and cross-filtering</subtopic><subtopic>Publishing and sharing to Power BI Service</subtopic></subtopics>
+          <outcomes><outcome>Write DAX measures for KPIs and time-based calculations</outcome><outcome>Build and publish an interactive multi-page dashboard</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="machine-learning" subject="data-science" price="15000" rating="4.8" students="980" date="2024-11-01" level="Intermediate" duration="25 hours">
+      <title>Machine Learning with Scikit-learn</title>
+      <description>Master the full ML workflow. Build regression, classification, and clustering models using Python and Scikit-learn on real datasets.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>The Machine Learning Workflow</title>
+          <subtopics><subtopic>Supervised vs unsupervised learning</subtopic><subtopic>Train/test splits and cross-validation</subtopic><subtopic>Feature engineering and normalisation</subtopic></subtopics>
+          <outcomes><outcome>Prepare datasets correctly for machine learning models</outcome><outcome>Evaluate models using cross-validation and key metrics</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Regression and Classification Algorithms</title>
+          <subtopics><subtopic>Linear, Ridge, and Lasso regression</subtopic><subtopic>Logistic regression, Decision Trees, Random Forests</subtopic><subtopic>Evaluation: RMSE, accuracy, precision, recall, F1, ROC-AUC</subtopic></subtopics>
+          <outcomes><outcome>Apply regression and classification models to real datasets</outcome><outcome>Interpret confusion matrices and model evaluation reports</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="statistics-ds" subject="data-science" price="7500" rating="4.5" students="760" date="2024-08-10" level="Beginner" duration="14 hours">
+      <title>Statistics for Data Science</title>
+      <description>Build the mathematical foundation every data scientist needs. Descriptive stats, probability, hypothesis testing, and regression with Python examples.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Descriptive Statistics and Probability</title>
+          <subtopics><subtopic>Measures of central tendency and spread</subtopic><subtopic>Probability rules and Bayes' theorem</subtopic><subtopic>Normal, binomial, and Poisson distributions</subtopic></subtopics>
+          <outcomes><outcome>Summarise any dataset using statistical measures</outcome><outcome>Calculate probabilities and apply Bayes' theorem</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Hypothesis Testing and Regression</title>
+          <subtopics><subtopic>Null and alternative hypotheses</subtopic><subtopic>t-tests, chi-square tests, and p-values</subtopic><subtopic>Simple linear regression and correlation</subtopic></subtopics>
+          <outcomes><outcome>Conduct hypothesis tests and interpret results correctly</outcome><outcome>Perform and interpret a simple linear regression</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="big-data" subject="data-science" price="12000" rating="4.3" students="420" date="2025-02-01" level="Advanced" duration="20 hours">
+      <title>Big Data Fundamentals with Apache Spark</title>
+      <description>Process massive datasets using Apache Spark. Learn PySpark, distributed computing, and data pipeline design for enterprise-scale analytics.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>Distributed Computing and Spark Architecture</title>
+          <subtopics><subtopic>Hadoop ecosystem overview</subtopic><subtopic>Spark driver, executors, and partitions</subtopic><subtopic>Setting up Spark locally and on Databricks</subtopic></subtopics>
+          <outcomes><outcome>Explain distributed computing and the Spark execution model</outcome><outcome>Run Spark jobs in local and cloud environments</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="70 min">
+          <title>PySpark DataFrames and Optimisation</title>
+          <subtopics><subtopic>Spark DataFrames and Spark SQL</subtopic><subtopic>Lazy evaluation and the Catalyst optimizer</subtopic><subtopic>Caching, partitioning, and Parquet format</subtopic></subtopics>
+          <outcomes><outcome>Use PySpark to process datasets that exceed memory limits</outcome><outcome>Optimise Spark jobs using caching and smart partitioning</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="r-analytics" subject="data-science" price="10000" rating="4.6" students="580" date="2024-12-15" level="Intermediate" duration="16 hours">
+      <title>R Programming for Analytics</title>
+      <description>Master R for statistical computing and visualisation. Learn tidyverse, ggplot2, and R Markdown to produce professional analytical reports.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>R Basics and Data Manipulation with dplyr</title>
+          <subtopics><subtopic>R syntax, vectors, data frames, and factors</subtopic><subtopic>The pipe operator and dplyr verbs: filter, mutate, summarise</subtopic><subtopic>Joining data frames and reshaping with tidyr</subtopic></subtopics>
+          <outcomes><outcome>Write R scripts to clean and transform data frames</outcome><outcome>Chain dplyr operations using the pipe operator</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Data Visualisation with ggplot2</title>
+          <subtopics><subtopic>The grammar of graphics: geoms, aesthetics, facets</subtopic><subtopic>Bar, scatter, line, and box plots in ggplot2</subtopic><subtopic>Themes, colour palettes, and exporting publication charts</subtopic></subtopics>
+          <outcomes><outcome>Create high-quality, customised charts using ggplot2</outcome><outcome>Export plots for inclusion in academic papers and reports</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <!-- UI/UX Design -->
+
+    <course id="figma-basics" subject="ux-design" price="5500" rating="4.7" students="2450" date="2024-06-01" level="Beginner" duration="10 hours">
+      <title>Figma for Beginners</title>
+      <description>Learn Figma — the industry's most popular design tool. Create wireframes, UI designs, and interactive prototypes from scratch.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>Figma Interface and Core Tools</title>
+          <subtopics><subtopic>Frames, groups, and the layer panel</subtopic><subtopic>Shape tools, pen tool, and Boolean operations</subtopic><subtopic>Typography: fonts, styles, and text properties</subtopic></subtopics>
+          <outcomes><outcome>Navigate Figma's interface and use core drawing tools</outcome><outcome>Create and style text and shape elements</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="55 min">
+          <title>Components, Auto Layout, and Prototyping</title>
+          <subtopics><subtopic>Creating and using components and variants</subtopic><subtopic>Auto Layout for responsive components</subtopic><subtopic>Adding interactions and prototype flows</subtopic></subtopics>
+          <outcomes><outcome>Build a reusable component library in Figma</outcome><outcome>Create a clickable prototype for user testing</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="user-research" subject="ux-design" price="7000" rating="4.5" students="890" date="2024-09-15" level="Beginner" duration="12 hours">
+      <title>User Research &amp; Personas</title>
+      <description>Understand your users through interviews, surveys, and usability testing. Create evidence-based personas and journey maps to guide design decisions.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>UX Research Methods</title>
+          <subtopics><subtopic>Qualitative vs quantitative research</subtopic><subtopic>Planning a study: goals, methods, participants</subtopic><subtopic>Conducting user interviews with active listening techniques</subtopic></subtopics>
+          <outcomes><outcome>Plan and conduct a UX research study</outcome><outcome>Analyse interview data using affinity mapping</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="50 min">
+          <title>Personas and User Journey Maps</title>
+          <subtopics><subtopic>Building evidence-based personas from research data</subtopic><subtopic>Customer journey mapping: stages, touchpoints, pain points</subtopic><subtopic>Using personas to guide design decisions</subtopic></subtopics>
+          <outcomes><outcome>Create realistic personas grounded in research</outcome><outcome>Map user journeys to identify design opportunities</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="mobile-ui" subject="ux-design" price="11000" rating="4.8" students="1130" date="2024-11-20" level="Intermediate" duration="18 hours">
+      <title>Mobile App UI Design</title>
+      <description>Design stunning, usable mobile app interfaces following iOS and Android design guidelines. Learn gesture navigation and mobile-first patterns.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Mobile Design Principles and Platform Guidelines</title>
+          <subtopics><subtopic>iOS Human Interface Guidelines</subtopic><subtopic>Material Design 3 principles</subtopic><subtopic>Touch targets, thumb zones, and gestural navigation</subtopic></subtopics>
+          <outcomes><outcome>Apply platform-appropriate design patterns for iOS and Android</outcome><outcome>Design for comfortable one-handed mobile use</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Designing Mobile Screens and Navigation</title>
+          <subtopics><subtopic>Onboarding flows, empty states, and error screens</subtopic><subtopic>Navigation patterns: tab bars, bottom sheets, drawers</subtopic><subtopic>Mobile form design and keyboard handling</subtopic></subtopics>
+          <outcomes><outcome>Design a complete mobile app flow from onboarding to core features</outcome><outcome>Choose and implement appropriate mobile navigation patterns</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="accessibility-design" subject="ux-design" price="6500" rating="4.6" students="540" date="2024-10-10" level="Beginner" duration="10 hours">
+      <title>Accessibility in Design</title>
+      <description>Design digital products usable by everyone. Learn WCAG guidelines, colour contrast, screen reader compatibility, and inclusive design principles.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>WCAG 2.1 Guidelines and Colour Contrast</title>
+          <subtopics><subtopic>The four principles: Perceivable, Operable, Understandable, Robust</subtopic><subtopic>Colour contrast ratios and testing tools (WebAIM Contrast Checker)</subtopic><subtopic>Do not rely on colour alone to convey meaning</subtopic></subtopics>
+          <outcomes><outcome>Audit a design against WCAG 2.1 AA standards</outcome><outcome>Select colour combinations that meet contrast requirements</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="55 min">
+          <title>Screen Readers, ARIA, and Keyboard Navigation</title>
+          <subtopics><subtopic>Testing with NVDA and VoiceOver screen readers</subtopic><subtopic>ARIA roles, labels, and landmarks</subtopic><subtopic>Keyboard focus order and tab navigation</subtopic></subtopics>
+          <outcomes><outcome>Make interfaces navigable by keyboard and screen readers</outcome><outcome>Implement ARIA attributes correctly in HTML</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="design-systems" subject="ux-design" price="9500" rating="4.7" students="420" date="2025-01-05" level="Intermediate" duration="15 hours">
+      <title>Design Systems &amp; Style Guides</title>
+      <description>Build scalable design systems used by entire product teams. Create token-based foundations, component libraries, and living documentation.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>Design Tokens and Foundations</title>
+          <subtopics><subtopic>Colour, typography, and spacing tokens</subtopic><subtopic>Primitive, semantic, and component-level tokens</subtopic><subtopic>Exporting tokens for engineering handoff</subtopic></subtopics>
+          <outcomes><outcome>Create a comprehensive token system for a design system</outcome><outcome>Export design tokens in JSON for developer use</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Component Library and Documentation</title>
+          <subtopics><subtopic>Anatomy of a component: base, variants, states, sizes</subtopic><subtopic>Figma component properties for interactive controls</subtopic><subtopic>Writing usage guidelines and documentation</subtopic></subtopics>
+          <outcomes><outcome>Build a documented, reusable component library in Figma</outcome><outcome>Write clear usage guidelines for every component</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="ux-portfolio" subject="ux-design" price="5000" rating="4.3" students="720" date="2024-07-20" level="Beginner" duration="8 hours">
+      <title>Portfolio Building for Designers</title>
+      <description>Craft a portfolio that gets you hired. Write compelling case studies and build your online presence on Notion, Webflow, or Behance.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>Writing Compelling Case Studies</title>
+          <subtopics><subtopic>Case study structure: problem, process, outcome</subtopic><subtopic>Showing your thinking, not just final screens</subtopic><subtopic>Writing for hiring managers who skim</subtopic></subtopics>
+          <outcomes><outcome>Write a structured, compelling UX case study</outcome><outcome>Present design decisions with evidence and rationale</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="45 min">
+          <title>Publishing Your Portfolio Online</title>
+          <subtopics><subtopic>Choosing a platform: Notion, Webflow, Cargo, Behance</subtopic><subtopic>Portfolio structure, navigation, and about page</subtopic><subtopic>Promoting your portfolio and applying for roles</subtopic></subtopics>
+          <outcomes><outcome>Publish a live portfolio website showcasing your best work</outcome><outcome>Tailor your portfolio for different design roles</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="user-psychology" subject="ux-design" price="7500" rating="4.5" students="380" date="2024-12-20" level="Intermediate" duration="12 hours">
+      <title>User Psychology &amp; Behaviour</title>
+      <description>Apply cognitive psychology to design smarter interfaces. Hick's Law, Fitts's Law, cognitive load, and ethical persuasive design principles.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Cognitive Principles in UX</title>
+          <subtopics><subtopic>Hick's Law and reducing decision fatigue</subtopic><subtopic>Fitts's Law and interactive element sizing</subtopic><subtopic>Miller's Law and working memory limits</subtopic></subtopics>
+          <outcomes><outcome>Apply cognitive laws to reduce friction in navigation</outcome><outcome>Design interfaces that respect cognitive load limits</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="adobe-xd" subject="ux-design" price="8500" rating="4.4" students="670" date="2024-08-05" level="Intermediate" duration="14 hours">
+      <title>Prototyping with Adobe XD</title>
+      <description>Design and prototype high-fidelity mobile and web interfaces using Adobe XD components, repeat grids, and advanced animation.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>Adobe XD Interface and Repeat Grid</title>
+          <subtopics><subtopic>Artboards and responsive resize</subtopic><subtopic>Assets panel and design systems in XD</subtopic><subtopic>Repeat Grid for list and gallery layouts</subtopic></subtopics>
+          <outcomes><outcome>Build structured artboards and reusable design assets</outcome><outcome>Use Repeat Grid to design list and card layouts quickly</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Interactive Prototyping and Handoff</title>
+          <subtopics><subtopic>Prototype mode: triggers, actions, and overlays</subtopic><subtopic>Auto-animate for smooth transitions</subtopic><subtopic>Sharing prototypes and developer handoff</subtopic></subtopics>
+          <outcomes><outcome>Build animated interactive prototypes in Adobe XD</outcome><outcome>Share and gather feedback using XD's prototype sharing</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <!-- Cyber Security -->
+
+    <course id="intro-cybersec" subject="cyber-security" price="6500" rating="4.6" students="1870" date="2024-05-15" level="Beginner" duration="12 hours">
+      <title>Introduction to Cyber Security</title>
+      <description>Start your cyber security journey. Learn threats, vulnerabilities, attack vectors, and fundamental principles of protecting information systems.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>The Cyber Security Landscape</title>
+          <subtopics><subtopic>Types of threats: malware, phishing, ransomware, APTs</subtopic><subtopic>The CIA Triad: Confidentiality, Integrity, Availability</subtopic><subtopic>Common attack vectors and the attack surface</subtopic></subtopics>
+          <outcomes><outcome>Describe the current threat landscape and common attack types</outcome><outcome>Explain the CIA Triad and its importance to security</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="55 min">
+          <title>Networking for Security</title>
+          <subtopics><subtopic>TCP/IP model, DNS, and HTTP/HTTPS</subtopic><subtopic>Ports, protocols, and firewalls</subtopic><subtopic>Packet analysis with Wireshark</subtopic></subtopics>
+          <outcomes><outcome>Explain how network protocols relate to security</outcome><outcome>Capture and analyse basic network traffic with Wireshark</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="50 min">
+          <title>Security Frameworks and Risk Management</title>
+          <subtopics><subtopic>ISO 27001 and NIST Cybersecurity Framework</subtopic><subtopic>Security policies and standards</subtopic><subtopic>Basic risk assessment methodology</subtopic></subtopics>
+          <outcomes><outcome>Describe key security frameworks and their application</outcome><outcome>Conduct a basic risk assessment for a small organisation</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="ethical-hacking" subject="cyber-security" price="12000" rating="4.8" students="1240" date="2024-09-01" level="Intermediate" duration="22 hours">
+      <title>Ethical Hacking Basics</title>
+      <description>Learn how attackers think so you can defend against them. Covers reconnaissance, scanning, exploitation, and responsible disclosure.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>Ethical Hacking Methodology</title>
+          <subtopics><subtopic>Phases: Reconnaissance, Scanning, Exploitation, Post-Exploitation</subtopic><subtopic>Legal considerations and scope of engagement</subtopic><subtopic>Setting up a safe lab with VMs and Kali Linux</subtopic></subtopics>
+          <outcomes><outcome>Follow a structured ethical hacking methodology</outcome><outcome>Set up a legal penetration testing lab environment</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Reconnaissance and Scanning</title>
+          <subtopics><subtopic>Passive OSINT: WHOIS, Shodan, Google dorks</subtopic><subtopic>Active scanning with Nmap: port discovery and service detection</subtopic><subtopic>Vulnerability scanning with OpenVAS</subtopic></subtopics>
+          <outcomes><outcome>Map a target's attack surface using OSINT and scanning tools</outcome><outcome>Produce a reconnaissance report from gathered intelligence</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="70 min">
+          <title>Exploitation with Metasploit</title>
+          <subtopics><subtopic>Metasploit Framework architecture: modules and payloads</subtopic><subtopic>Exploiting a known vulnerability in a lab environment</subtopic><subtopic>Post-exploitation: persistence and privilege escalation</subtopic></subtopics>
+          <outcomes><outcome>Use Metasploit to exploit vulnerabilities in a controlled lab</outcome><outcome>Escalate privileges after gaining initial access</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="network-security" subject="cyber-security" price="9500" rating="4.5" students="760" date="2024-07-10" level="Intermediate" duration="18 hours">
+      <title>Network Security Fundamentals</title>
+      <description>Secure enterprise networks against intrusions. Firewall configuration, IDS/IPS systems, VPNs, and network monitoring with real tools.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Firewalls and Perimeter Security</title>
+          <subtopics><subtopic>Stateful vs stateless packet filtering</subtopic><subtopic>Configuring firewall rules: allow, deny, NAT</subtopic><subtopic>DMZ architecture and defence in depth</subtopic></subtopics>
+          <outcomes><outcome>Configure firewall rules to control network traffic</outcome><outcome>Design a secure network perimeter with a DMZ</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>IDS/IPS and Network Monitoring</title>
+          <subtopics><subtopic>IDS vs IPS: signatures vs anomaly-based detection</subtopic><subtopic>Deploying Snort as a network IDS</subtopic><subtopic>Analysing alerts and tuning to reduce false positives</subtopic></subtopics>
+          <outcomes><outcome>Deploy a network IDS and tune detection rules</outcome><outcome>Analyse IDS alerts to distinguish genuine threats from noise</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="pentest-kali" subject="cyber-security" price="18500" rating="4.9" students="890" date="2024-10-15" level="Advanced" duration="30 hours">
+      <title>Penetration Testing with Kali Linux</title>
+      <description>Professional penetration testing using the full Kali Linux toolkit. Web application, network, and social engineering tests for CEH/OSCP preparation.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="70 min">
+          <title>Kali Linux and Essential Tools</title>
+          <subtopics><subtopic>Kali Linux installation and configuration</subtopic><subtopic>Key tools: Nmap, Burp Suite, Hydra, John the Ripper</subtopic><subtopic>Bash and Python scripting for automation</subtopic></subtopics>
+          <outcomes><outcome>Use Kali Linux tools fluently for penetration testing tasks</outcome><outcome>Automate recon and exploitation tasks with scripts</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="75 min">
+          <title>Web Application Penetration Testing</title>
+          <subtopics><subtopic>OWASP Top 10: SQLi, XSS, IDOR, SSRF in practice</subtopic><subtopic>Using Burp Suite for web app testing</subtopic><subtopic>Testing authentication, sessions, and APIs</subtopic></subtopics>
+          <outcomes><outcome>Perform a structured web application penetration test</outcome><outcome>Identify and document OWASP Top 10 vulnerabilities</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="siem-detection" subject="cyber-security" price="14000" rating="4.6" students="430" date="2024-12-01" level="Advanced" duration="20 hours">
+      <title>SIEM &amp; Threat Detection</title>
+      <description>Build SOC analyst skills. Use Splunk and Microsoft Sentinel to detect, investigate, and respond to security incidents at scale.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>SIEM Architecture and Log Management</title>
+          <subtopics><subtopic>What is a SIEM and how it collects logs</subtopic><subtopic>Log sources: Windows events, syslog, firewall logs</subtopic><subtopic>Normalisation, correlation rules, and alerting</subtopic></subtopics>
+          <outcomes><outcome>Explain SIEM log ingestion and correlation pipelines</outcome><outcome>Configure log sources and write basic correlation rules</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Threat Hunting with Splunk and MITRE ATT&amp;CK</title>
+          <subtopics><subtopic>SPL queries for threat hunting</subtopic><subtopic>Building dashboards and alert rules in Splunk</subtopic><subtopic>Mapping detections to MITRE ATT&amp;CK techniques</subtopic></subtopics>
+          <outcomes><outcome>Write SPL queries to hunt for indicators of compromise</outcome><outcome>Map detected behaviours to the MITRE ATT&amp;CK framework</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="cloud-security" subject="cyber-security" price="13500" rating="4.7" students="680" date="2025-01-20" level="Intermediate" duration="18 hours">
+      <title>Cloud Security Essentials (AWS/Azure)</title>
+      <description>Secure cloud infrastructure on AWS and Azure. IAM, network security groups, encryption, compliance, and cloud security monitoring.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>Identity and Access Management (IAM)</title>
+          <subtopics><subtopic>IAM users, groups, roles, and policies in AWS</subtopic><subtopic>Azure Active Directory and RBAC</subtopic><subtopic>Principle of least privilege in cloud environments</subtopic></subtopics>
+          <outcomes><outcome>Configure IAM policies to enforce least-privilege access</outcome><outcome>Set up multi-factor authentication for cloud accounts</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Cloud Network Security and Compliance</title>
+          <subtopics><subtopic>VPCs, subnets, and security groups in AWS</subtopic><subtopic>Azure Virtual Networks and NSGs</subtopic><subtopic>Cloud compliance: SOC 2, ISO 27001 in the cloud</subtopic></subtopics>
+          <outcomes><outcome>Design a secure cloud network with proper segmentation</outcome><outcome>Map cloud security controls to compliance requirements</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="digital-forensics" subject="cyber-security" price="11000" rating="4.4" students="560" date="2024-11-05" level="Intermediate" duration="16 hours">
+      <title>Digital Forensics Basics</title>
+      <description>Investigate security incidents and recover digital evidence. Evidence acquisition, disk and memory forensics, and professional report writing.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Forensic Evidence Acquisition</title>
+          <subtopics><subtopic>Chain of custody and legal admissibility</subtopic><subtopic>Write blockers and forensic imaging with FTK Imager</subtopic><subtopic>Hashing images for evidence integrity verification</subtopic></subtopics>
+          <outcomes><outcome>Acquire forensic images while maintaining chain of custody</outcome><outcome>Verify evidence integrity using cryptographic hashing</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="65 min">
+          <title>Disk and Memory Analysis with Autopsy</title>
+          <subtopics><subtopic>NTFS and FAT32 file system structures</subtopic><subtopic>Recovering deleted files and carving data</subtopic><subtopic>Analysing browser history, registry, and event logs</subtopic></subtopics>
+          <outcomes><outcome>Analyse a forensic image and recover deleted artefacts</outcome><outcome>Reconstruct user activity from Windows system artefacts</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="cybersec-smes" subject="cyber-security" price="8000" rating="4.5" students="1120" date="2024-08-20" level="Beginner" duration="10 hours">
+      <title>Cyber Security for Small Businesses</title>
+      <description>Practical, affordable cyber security for SME owners. Protect against ransomware, phishing, and data breaches on a realistic budget.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="45 min">
+          <title>Top Threats Facing Small Businesses</title>
+          <subtopics><subtopic>Phishing, ransomware, and Business Email Compromise</subtopic><subtopic>Implementing a 3-2-1 backup strategy</subtopic><subtopic>Recognising social engineering attacks</subtopic></subtopics>
+          <outcomes><outcome>Identify the most common threats targeting small businesses</outcome><outcome>Implement a cost-effective backup and recovery strategy</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="50 min">
+          <title>Essential Security Controls for SMEs</title>
+          <subtopics><subtopic>Password managers and multi-factor authentication</subtopic><subtopic>Patch management and software update policies</subtopic><subtopic>Staff cyber security awareness training</subtopic></subtopics>
+          <outcomes><outcome>Implement practical security controls on a small budget</outcome><outcome>Deliver a basic cyber security awareness session to staff</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <!-- AI & Machine Learning -->
+
+    <course id="intro-ai" subject="ai-ml" price="7500" rating="4.7" students="2100" date="2024-06-10" level="Beginner" duration="12 hours">
+      <title>Introduction to Artificial Intelligence</title>
+      <description>Demystify AI. Explore history, key concepts, and real-world applications — from machine learning to large language models — with no maths prerequisites.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>What is Artificial Intelligence?</title>
+          <subtopics><subtopic>A brief history: from Turing to ChatGPT</subtopic><subtopic>Narrow vs General AI</subtopic><subtopic>AI vs Machine Learning vs Deep Learning</subtopic></subtopics>
+          <outcomes><outcome>Explain the difference between AI, ML, and deep learning</outcome><outcome>Identify real-world AI applications across key industries</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="55 min">
+          <title>How Machine Learning Works</title>
+          <subtopics><subtopic>Training, validation, and test sets</subtopic><subtopic>Features, labels, and model parameters</subtopic><subtopic>Overfitting, underfitting, and bias-variance tradeoff</subtopic></subtopics>
+          <outcomes><outcome>Explain the ML training process to non-technical stakeholders</outcome><outcome>Describe overfitting and how regularisation addresses it</outcome></outcomes>
+        </lesson>
+        <lesson order="3" lessonDuration="60 min">
+          <title>AI Ethics and Societal Impact</title>
+          <subtopics><subtopic>Algorithmic bias and fairness in AI systems</subtopic><subtopic>Privacy implications of AI and data collection</subtopic><subtopic>Overview of the EU AI Act and global regulation</subtopic></subtopics>
+          <outcomes><outcome>Identify ethical risks and biases in AI systems</outcome><outcome>Apply responsible AI principles when evaluating AI projects</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="python-aiml" subject="ai-ml" price="9500" rating="4.8" students="1890" date="2024-08-15" level="Beginner" duration="16 hours">
+      <title>Python for AI &amp; Machine Learning</title>
+      <description>Build the Python foundation for AI and ML. Master NumPy, Pandas, Scikit-learn, and Matplotlib through AI-focused project exercises.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Python and NumPy for AI</title>
+          <subtopics><subtopic>Anaconda setup and virtual environments</subtopic><subtopic>NumPy arrays and linear algebra basics</subtopic><subtopic>Pandas DataFrames for feature engineering</subtopic></subtopics>
+          <outcomes><outcome>Set up a Python AI/ML development environment</outcome><outcome>Use NumPy for numerical operations on large datasets</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Building Your First ML Model with Scikit-learn</title>
+          <subtopics><subtopic>The Scikit-learn API: fit, predict, evaluate</subtopic><subtopic>Linear regression from scratch to Scikit-learn</subtopic><subtopic>Visualising predictions and residuals with Matplotlib</subtopic></subtopics>
+          <outcomes><outcome>Train and evaluate a regression model with Scikit-learn</outcome><outcome>Interpret model coefficients and evaluate prediction quality</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="deep-learning" subject="ai-ml" price="18000" rating="4.9" students="1340" date="2024-10-05" level="Advanced" duration="28 hours">
+      <title>Deep Learning with TensorFlow</title>
+      <description>Build and train deep neural networks with TensorFlow 2 and Keras. Feedforward networks, CNNs, RNNs, and transfer learning on real datasets.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="65 min">
+          <title>Neural Network Fundamentals</title>
+          <subtopics><subtopic>Neurons, layers, and activation functions</subtopic><subtopic>Forward and backpropagation explained</subtopic><subtopic>Gradient descent and optimisers: SGD, Adam</subtopic></subtopics>
+          <outcomes><outcome>Explain how neural networks learn via backpropagation</outcome><outcome>Build and train a feedforward network with Keras</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="70 min">
+          <title>CNNs and Transfer Learning</title>
+          <subtopics><subtopic>Convolution, pooling, and feature maps</subtopic><subtopic>Building a CNN for image classification</subtopic><subtopic>Transfer learning with ResNet50 and EfficientNet</subtopic></subtopics>
+          <outcomes><outcome>Build a CNN to classify images accurately</outcome><outcome>Apply transfer learning to achieve strong results quickly</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="nlp" subject="ai-ml" price="16500" rating="4.7" students="980" date="2024-11-10" level="Advanced" duration="24 hours">
+      <title>Natural Language Processing</title>
+      <description>Teach machines to understand text. Tokenisation, embeddings, transformers, and NLP applications using Python and Hugging Face.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>Text Preprocessing and Embeddings</title>
+          <subtopics><subtopic>Tokenisation, lemmatisation, and stopword removal</subtopic><subtopic>Bag of Words and TF-IDF</subtopic><subtopic>Word embeddings: Word2Vec and GloVe</subtopic></subtopics>
+          <outcomes><outcome>Preprocess raw text for NLP tasks</outcome><outcome>Represent text numerically using TF-IDF and embeddings</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="70 min">
+          <title>Transformers and BERT Fine-Tuning</title>
+          <subtopics><subtopic>The attention mechanism explained intuitively</subtopic><subtopic>BERT and GPT architecture overview</subtopic><subtopic>Fine-tuning BERT with Hugging Face Transformers</subtopic></subtopics>
+          <outcomes><outcome>Fine-tune a pre-trained BERT model for text classification</outcome><outcome>Explain self-attention in transformer architecture</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="computer-vision" subject="ai-ml" price="15000" rating="4.8" students="760" date="2024-12-05" level="Advanced" duration="22 hours">
+      <title>Computer Vision Fundamentals</title>
+      <description>Enable machines to see and interpret images. Build object detection and image classification systems using OpenCV and PyTorch.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="60 min">
+          <title>Image Processing with OpenCV</title>
+          <subtopics><subtopic>Reading, resizing, and colour space conversions</subtopic><subtopic>Filters: blurring, edge detection (Canny, Sobel)</subtopic><subtopic>Contour detection and morphological operations</subtopic></subtopics>
+          <outcomes><outcome>Apply image processing transformations with OpenCV</outcome><outcome>Detect and analyse shapes and contours in images</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="70 min">
+          <title>Object Detection with YOLOv8</title>
+          <subtopics><subtopic>Object detection vs image classification</subtopic><subtopic>YOLO architecture and anchor boxes</subtopic><subtopic>Running YOLOv8 inference on images and video</subtopic></subtopics>
+          <outcomes><outcome>Run real-time object detection using YOLOv8</outcome><outcome>Evaluate detection quality with mAP metric</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="reinforcement-learning" subject="ai-ml" price="19500" rating="4.6" students="420" date="2025-01-15" level="Advanced" duration="26 hours">
+      <title>Reinforcement Learning</title>
+      <description>Train agents to make decisions through trial and error. Q-Learning, Deep Q-Networks, and policy gradient methods with OpenAI Gym.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="65 min">
+          <title>MDP Foundations and Q-Learning</title>
+          <subtopics><subtopic>Agents, environments, states, actions, and rewards</subtopic><subtopic>Markov Decision Processes (MDPs)</subtopic><subtopic>Q-Learning algorithm and the Bellman equation</subtopic></subtopics>
+          <outcomes><outcome>Define the RL problem using MDP formalism</outcome><outcome>Implement tabular Q-Learning on a grid world</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="70 min">
+          <title>Deep Q-Networks (DQN)</title>
+          <subtopics><subtopic>DQN architecture: experience replay and target networks</subtopic><subtopic>Training DQN on CartPole with Stable Baselines3</subtopic><subtopic>Diagnosing instability and tuning hyperparameters</subtopic></subtopics>
+          <outcomes><outcome>Implement and train a DQN agent</outcome><outcome>Analyse training curves and stabilise learning</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="ai-ethics" subject="ai-ml" price="6500" rating="4.5" students="680" date="2024-09-20" level="Beginner" duration="8 hours">
+      <title>AI Ethics &amp; Responsible AI</title>
+      <description>Explore the ethical dimensions of AI. Fairness, accountability, transparency, and responsible AI practices in real-world systems.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>Bias, Fairness, and Explainability</title>
+          <subtopics><subtopic>Sources of algorithmic bias: data, model, and deployment</subtopic><subtopic>Fairness metrics: demographic parity, equalised odds</subtopic><subtopic>SHAP and LIME for model explainability (XAI)</subtopic></subtopics>
+          <outcomes><outcome>Identify and measure bias in AI systems</outcome><outcome>Use SHAP values to explain model predictions</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="mlops" subject="ai-ml" price="22000" rating="4.7" students="560" date="2025-02-10" level="Advanced" duration="24 hours">
+      <title>MLOps &amp; Model Deployment</title>
+      <description>Bridge data science and production. Serve, monitor, and maintain ML models using MLflow, FastAPI, Docker, and cloud platforms.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="65 min">
+          <title>Experiment Tracking with MLflow</title>
+          <subtopics><subtopic>Logging parameters, metrics, and artefacts</subtopic><subtopic>MLflow UI for comparing experiments</subtopic><subtopic>Model Registry for versioning and staging</subtopic></subtopics>
+          <outcomes><outcome>Track and compare ML experiments with MLflow</outcome><outcome>Register and version models for production deployment</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="70 min">
+          <title>Serving Models with FastAPI and Docker</title>
+          <subtopics><subtopic>Building a model inference REST API with FastAPI</subtopic><subtopic>Containerising the API with Docker</subtopic><subtopic>Deploying to AWS ECS or Google Cloud Run</subtopic></subtopics>
+          <outcomes><outcome>Build and containerise a production ML inference API</outcome><outcome>Deploy and scale the API on a cloud container platform</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <!-- Digital Marketing -->
+
+    <course id="social-media-mktg" subject="digital-marketing" price="4500" rating="4.6" students="3100" date="2024-04-01" level="Beginner" duration="10 hours">
+      <title>Social Media Marketing Mastery</title>
+      <description>Build and grow an audience on Instagram, LinkedIn, TikTok, and Facebook. Content strategy, scheduling, and paid social basics.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>Platform Strategy and Content Planning</title>
+          <subtopics><subtopic>Choosing the right platforms for your target audience</subtopic><subtopic>Building a content calendar with content pillars</subtopic><subtopic>The 80/20 value-to-promotion rule</subtopic></subtopics>
+          <outcomes><outcome>Define a focused social media strategy for one to two platforms</outcome><outcome>Create a monthly content calendar with varied content types</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="55 min">
+          <title>Growth Tactics and Analytics</title>
+          <subtopics><subtopic>Hashtag strategy and organic reach optimisation</subtopic><subtopic>Engagement tactics: stories, polls, collaborations</subtopic><subtopic>Measuring: reach, impressions, engagement rate, CTR</subtopic></subtopics>
+          <outcomes><outcome>Apply organic growth tactics to grow followers consistently</outcome><outcome>Produce a data-driven monthly social media performance report</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="seo-content" subject="digital-marketing" price="6500" rating="4.7" students="2340" date="2024-06-20" level="Beginner" duration="14 hours">
+      <title>SEO &amp; Content Strategy</title>
+      <description>Rank higher on Google and attract organic traffic. Keyword research, on-page and off-page SEO, technical SEO, and content strategy.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Keyword Research and On-Page SEO</title>
+          <subtopics><subtopic>Using Ahrefs, SEMrush, and Google Keyword Planner</subtopic><subtopic>Search intent: informational, navigational, transactional</subtopic><subtopic>Title tags, meta descriptions, heading hierarchy, Core Web Vitals</subtopic></subtopics>
+          <outcomes><outcome>Conduct keyword research to identify content opportunities</outcome><outcome>Optimise page elements to improve search rankings</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Link Building and Technical SEO</title>
+          <subtopics><subtopic>Why backlinks matter: domain authority explained</subtopic><subtopic>Guest posting, digital PR, and resource link building</subtopic><subtopic>Site audits: crawl errors, canonicals, schema markup</subtopic></subtopics>
+          <outcomes><outcome>Plan and execute a white-hat link building campaign</outcome><outcome>Conduct a technical SEO audit and fix priority issues</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="google-ads" subject="digital-marketing" price="8500" rating="4.5" students="1230" date="2024-09-10" level="Intermediate" duration="16 hours">
+      <title>Google Ads &amp; PPC Advertising</title>
+      <description>Run profitable pay-per-click campaigns. Search, display, and shopping ads, bidding strategies, ad copywriting, and conversion tracking.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>Google Ads Account Structure and Bidding</title>
+          <subtopics><subtopic>Campaigns, ad groups, ads, and keywords hierarchy</subtopic><subtopic>Campaign types: Search, Display, Shopping, Performance Max</subtopic><subtopic>Bidding strategies: CPC, Target CPA, Target ROAS</subtopic></subtopics>
+          <outcomes><outcome>Create a well-structured Google Ads campaign</outcome><outcome>Choose the right bidding strategy for your campaign goal</outcome></outcomes>
+        </lesson>
+        <lesson order="2" lessonDuration="60 min">
+          <title>Keywords, Ad Copy, and Conversion Tracking</title>
+          <subtopics><subtopic>Keyword match types and negative keywords</subtopic><subtopic>Writing high-CTR responsive search ads</subtopic><subtopic>Setting up Google Tag Manager and conversion tracking</subtopic></subtopics>
+          <outcomes><outcome>Manage keyword match types to control budget spend</outcome><outcome>Track conversions accurately to measure campaign ROI</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="email-marketing" subject="digital-marketing" price="5000" rating="4.4" students="1560" date="2024-05-20" level="Beginner" duration="10 hours">
+      <title>Email Marketing Campaigns</title>
+      <description>Build and nurture an email list that drives revenue. List building, segmentation, automation sequences, and high-converting copy.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>List Building, Segmentation, and Automation</title>
+          <subtopics><subtopic>Lead magnets and opt-in strategies</subtopic><subtopic>Segmenting by behaviour and purchase history</subtopic><subtopic>Welcome sequences and trigger-based automations</subtopic></subtopics>
+          <outcomes><outcome>Design and implement an email list building strategy</outcome><outcome>Build an automated welcome sequence in Mailchimp or Klaviyo</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="influencer-marketing" subject="digital-marketing" price="4000" rating="4.3" students="890" date="2024-07-05" level="Beginner" duration="8 hours">
+      <title>Influencer Marketing Strategies</title>
+      <description>Leverage influencers to grow your brand. Find, vet, brief, and measure influencer partnerships that deliver real ROI.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="45 min">
+          <title>Finding, Vetting, and Briefing Influencers</title>
+          <subtopics><subtopic>Mega vs macro vs micro vs nano influencers</subtopic><subtopic>Vetting with HypeAuditor: engagement rate and authenticity</subtopic><subtopic>Writing a clear creative brief and negotiating rates</subtopic></subtopics>
+          <outcomes><outcome>Identify and vet influencers aligned with your brand</outcome><outcome>Write a creative brief and negotiate usage rights</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="google-analytics" subject="digital-marketing" price="7000" rating="4.7" students="1080" date="2024-10-25" level="Intermediate" duration="12 hours">
+      <title>Google Analytics 4 Mastery</title>
+      <description>Unlock the full power of GA4. Set up events, build custom reports, track conversions, and create dashboards in Looker Studio.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>GA4 Setup, Events, and Funnels</title>
+          <subtopics><subtopic>GA4 vs Universal Analytics differences</subtopic><subtopic>Configuring custom events and conversions</subtopic><subtopic>Funnel exploration for conversion analysis</subtopic></subtopics>
+          <outcomes><outcome>Set up GA4 tracking from scratch on any website</outcome><outcome>Build funnel explorations to identify conversion drop-off</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="ecommerce-marketing" subject="digital-marketing" price="9500" rating="4.6" students="720" date="2024-12-10" level="Intermediate" duration="15 hours">
+      <title>E-Commerce Marketing &amp; Growth</title>
+      <description>Scale your online store. Product page optimisation, cart abandonment, retention marketing, and paid ads for e-commerce growth.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="55 min">
+          <title>CRO and Retention Marketing</title>
+          <subtopics><subtopic>Product page best practices: images, copy, social proof</subtopic><subtopic>A/B testing and reducing checkout friction</subtopic><subtopic>RFM analysis and loyalty programme design</subtopic></subtopics>
+          <outcomes><outcome>Identify and fix conversion killers on product pages</outcome><outcome>Segment customers by RFM score to drive repeat purchases</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+    <course id="brand-building" subject="digital-marketing" price="6000" rating="4.5" students="1450" date="2024-08-01" level="Beginner" duration="12 hours">
+      <title>Brand Building in the Digital Age</title>
+      <description>Build a brand people love online. Brand strategy, visual identity, messaging, and maintaining consistency across all digital channels.</description>
+      <lessons>
+        <lesson order="1" lessonDuration="50 min">
+          <title>Brand Strategy and Visual Identity</title>
+          <subtopics><subtopic>Brand purpose, mission, values, and archetypes</subtopic><subtopic>Target audience positioning and differentiation</subtopic><subtopic>Logo design, colour psychology, and brand style guides</subtopic></subtopics>
+          <outcomes><outcome>Define a clear brand strategy with purpose and positioning</outcome><outcome>Develop a visual identity system with style guide</outcome></outcomes>
+        </lesson>
+      </lessons>
+    </course>
+
+  </courses>
+
+</catalog>
